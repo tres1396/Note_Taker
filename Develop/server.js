@@ -4,7 +4,7 @@ const express = require("express");
 
 const app = express();
 const PORT = 3000;
-// process.env.PORT ||
+
 
 function saveJSON(data) {
   let jsonString = JSON.stringify(data);
@@ -54,9 +54,6 @@ app.get("/test", function (req, res) {
 app.get("/json", function (req, res) {
   res.json({ fruit: "banana" });
 });
-// Creating routes to HTML files
 
-// module export
-// module.exports = displayHTML(app);
 
-app.listen(PORT, () => console.log(`app now listenting on PORT: ${PORT}`));
+app.listen(PORT, () => console.log(`app now listening on PORT: ${PORT}`));
